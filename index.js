@@ -68,7 +68,7 @@ bot.sendMessage = async function(chatId, text, options) {
 
     console.log(chalk.red(chalk.bgBlack('[ PESAN ] => ')) + 
         chalk.white(chalk.bgBlack(text)) + '\n' + 
-        chalk.magenta('=> Dari BOT'), chalk.green(senderId), 
+        chalk.magenta('=> Dari BOT '), chalk.green(senderId), 
         chalk.yellow(senderId) + '\n' + 
         chalk.blueBright('=> Di'), chalk.green(senderId) + '\n' + 
         chalk.magenta('Jam :') + chalk.cyan(currentTime));
