@@ -58,6 +58,7 @@ async function connectToDatabase() {
 let defaultMarkupPercentage = 0.03;
 const hariini = moment.tz('Asia/Jakarta').locale('id').format('YYYY-MM-DD HH:mm:ss');
 
+const originalSendMessage = bot.sendMessage.bind(bot);
 bot.sendMessage = async function(chatId, text, options) {
     const message = await originalSendMessage(chatId, text, options);
 
