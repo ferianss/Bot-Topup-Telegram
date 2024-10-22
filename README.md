@@ -10,7 +10,7 @@
 - **User Registration**: Simple registration and role-based pricing based on user tier (Bronze, Gold, Platinum, VIP).
 - **And more.**
 
-## Integration with [JF Store](https://topup.j-f.cloud)
+## Integration with [JF Store](https://topup.j-f.cloud) and [Medanpedia](https://medanpedia.co.id/)
 
 The bot integrates with the JF Topup Service, allowing users to interact with the top-up services offered by [JF Store](https://topup.j-f.cloud). This integration includes:
 
