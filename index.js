@@ -1405,6 +1405,10 @@ bot.onText(/\/cekriwayat/, async (msg) => {
     const chatId = msg.chat.id;
     const sender = msg.from.id.toString();
 
+    const maxMessageLength = 4000; 
+    const sendMessageDelay = 1500; 
+    let currentMessage = `「 Riwayat Transaksi 」\n\n`;
+
     try {
         const target = sender;
         const userTransactions = await getTransactionsByUser(target);
@@ -1415,20 +1419,33 @@ bot.onText(/\/cekriwayat/, async (msg) => {
 
         userTransactions.sort((b, a) => new Date(a.waktu) - new Date(b.waktu));
 
-        let transactionHistory = `「 Riwayat Transaksi 」\n\n`;
-        transactionHistory += `» Total Transaksi : ${userTransactions.length}\n\n`;
+        currentMessage += `» Total Transaksi : ${userTransactions.length}\n\n`;
 
-        userTransactions.forEach(transaction => {
-            transactionHistory += `» Trx Id: ${transaction.invoice}\n`;
-            transactionHistory += `» Item: ${transaction.item}\n`;
-            transactionHistory += `» Status: ${transaction.status}\n`;
-            transactionHistory += `» Harga: Rp. ${transaction.harga.toLocaleString()}\n`;
-            transactionHistory += `» Tujuan: ${transaction.tujuan}\n`;
-            transactionHistory += `» Waktu: ${transaction.waktu}\n`;
-            transactionHistory += `───────────────\n`;
-        });
+        for (let transaction of userTransactions) {
+            const prices = transaction.harga;
+            const balanceInRinggit = (prices / exchangeRateToRinggit).toFixed(2);
 
-        return bot.sendMessage(chatId, transactionHistory);
+            const transactionInfo = `» Trx Id: ${transaction.invoice}\n` +
+                `» Item: ${transaction.item}\n` +
+                `» Status: ${transaction.status}\n` +
+                `» Harga: RM ${balanceInRinggit.toLocaleString()}\n` +
+                `» Tujuan: ${transaction.tujuan}\n` +
+                `» Waktu: ${transaction.waktu}\n` +
+                `───────────────\n`;
+
+            if ((currentMessage + transactionInfo).length > maxMessageLength) {
+                await bot.sendMessage(chatId, currentMessage); 
+                currentMessage = `「 Riwayat Transaksi 」\n\n`; 
+                await new Promise(resolve => setTimeout(resolve, sendMessageDelay)); 
+            }
+
+            currentMessage += transactionInfo;
+        }
+
+        if (currentMessage.length > 0) {
+            await bot.sendMessage(chatId, currentMessage);
+        }
+
     } catch (err) {
         console.error("Error in cekriwayat command:", err);
         bot.sendMessage(chatId, 'Terjadi kesalahan saat memproses permintaan Anda.');
