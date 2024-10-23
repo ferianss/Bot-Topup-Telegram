@@ -25,8 +25,8 @@ Bot ini terintegrasi dengan layanan JF STORE, memungkinkan pengguna untuk berint
 
 Sebelum menyiapkan bot, pastikan Anda memiliki:
 
-- [Node.js](https://nodejs.org/) yang sudah terpasang
-- Token bot Telegram (dapat diperoleh dengan menghubungi [BotFather](https://t.me/@BotFather))
+- [Node.js](https://nodejs.org/) yang sudah terinstall
+- Token bot Telegram (dapat diperoleh di [BotFather](https://t.me/@BotFather))
 - Akun [JF Store](https://topup.j-f.cloud/api/docs) dan APIKEY Anda
 - **Alamat IP Anda harus di-whitelist** agar bot dapat beroperasi. Pastikan IP Anda sudah ditambahkan ke daftar yang diizinkan untuk mencegah akses yang tidak sah.
   [Klik di sini untuk menambahkan IP Anda](https://wa.me/6285773305337?text=Halo,+mau+add+ip)
