@@ -28,6 +28,7 @@ Before setting up the bot, make sure you have the following:
 - A Telegram bot token (obtainable by talking to [BotFather](https://t.me/@BotFather))
 - An account with [JF Store](https://topup.j-f.cloud/api/docs) and your API key
 - **Your IP address must be whitelisted** in order for the bot to operate. Please ensure your IP is added to the allowed list to prevent unauthorized access.
+  [Click Here to add your IP](https://wa.me/6285773305337?text=Halo,+mau+add+ip)
 
 ### Installation
 
