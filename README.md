@@ -1,40 +1,42 @@
 # Bot-Topup-Telegram
 
-**Bot-Topup-Telegram** is a Telegram bot that allows users to perform top-up transactions directly within Telegram by integrating with the [JF Store API](https://topup.j-f.cloud/api/docs). This bot enables seamless transactions for purchasing products like mobile game credits, prepaid balances, and more.
+**Bot-Topup-Telegram** adalah sebuah bot Telegram yang memungkinkan pengguna melakukan transaksi top-up langsung di dalam Telegram dengan mengintegrasikan [API JF Store](https://topup.j-f.cloud/api/docs). Bot ini mempermudah transaksi pembelian produk seperti kredit game mobile, saldo prabayar, dan lainnya.
 
-## Features
+## Fitur
 
-- **Product Ordering**: Order various digital products like game credits, mobile top-ups, etc.
-- **Real-time Balance Check**: Automatically checks the balance and notifies if there are insufficient funds.
-- **Transaction Status**: Monitor and track the status of your orders directly within the bot.
-- **User Registration**: Simple registration and role-based pricing based on user tier (Bronze, Gold, Platinum, VIP).
-- **And more.**
+- **Pemesanan Produk**: Pesan berbagai produk digital seperti kredit game, top-up pulsa, dll.
+- **Cek Saldo Secara Real-time**: Memeriksa saldo secara otomatis dan memberikan notifikasi jika saldo tidak mencukupi.
+- **Status Transaksi**: Memantau dan melacak status pesanan langsung melalui bot.
+- **Registrasi Pengguna**: Registrasi sederhana dan harga berbasis peran sesuai dengan tingkatan pengguna (Bronze, Gold, Platinum, VIP).
+- **Dan masih banyak lagi.**
 
-## Integration with [JF Store](https://topup.j-f.cloud) and [Medanpedia](https://medanpedia.co.id/)
+## Integrasi dengan [JF Store](https://topup.j-f.cloud) dan [Medanpedia](https://medanpedia.co.id/)
 
-The bot integrates with the JF Topup Service, allowing users to interact with the top-up services offered by [JF Store](https://topup.j-f.cloud). This integration includes:
+Bot ini terintegrasi dengan layanan JF STORE, memungkinkan pengguna untuk berinteraksi dengan layanan top-up yang ditawarkan oleh [JF Store](https://topup.j-f.cloud). Integrasi ini mencakup:
 
-- **Fetching Product Information**: Retrieve available top-up products and their pricing.
-- **Submitting Orders**: Send orders for digital products via the JF Topup API.
-- **Order Status Monitoring**: Query and display the status of each transaction.
+- **Mengambil Informasi Profile**.
+- **Mengambil Informasi Produk**: Mendapatkan produk top-up yang tersedia beserta harganya.
+- **Mengirim Pesanan**: Mengirim pesanan produk digital melalui API JF Topup.
+- **Memantau Status Pesanan**: Menanyakan dan menampilkan status dari setiap transaksi.
 
-## Getting Started
+## Memulai
 
-### Prerequisites
+### Prasyarat
 
-Before setting up the bot, make sure you have the following:
+Sebelum menyiapkan bot, pastikan Anda memiliki:
 
-- [Node.js](https://nodejs.org/) installed
-- A Telegram bot token (obtainable by talking to [BotFather](https://t.me/@BotFather))
-- An account with [JF Store](https://topup.j-f.cloud/api/docs) and your API key
-- **Your IP address must be whitelisted** in order for the bot to operate. Please ensure your IP is added to the allowed list to prevent unauthorized access.
-  [Click Here to add your IP](https://wa.me/6285773305337?text=Halo,+mau+add+ip)
+- [Node.js](https://nodejs.org/) yang sudah terpasang
+- Token bot Telegram (dapat diperoleh dengan menghubungi [BotFather](https://t.me/@BotFather))
+- Akun [JF Store](https://topup.j-f.cloud/api/docs) dan APIKEY Anda
+- **Alamat IP Anda harus di-whitelist** agar bot dapat beroperasi. Pastikan IP Anda sudah ditambahkan ke daftar yang diizinkan untuk mencegah akses yang tidak sah.
+  [Klik di sini untuk menambahkan IP Anda](https://wa.me/6285773305337?text=Halo,+mau+add+ip)
 
-### Installation
+### Instalasi
 
-1. **Clone the repository**:
+1. **Klon repositori**:
    ```bash
    git clone https://github.com/ferianss/Bot-Topup-Telegram.git
+
 2. **cd Bot-Topup-Telegram**
 3. **Install the dependencies:**
    ```
