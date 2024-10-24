@@ -1,6 +1,6 @@
 # Bot-Topup-Telegram
 
-**Bot-Topup-Telegram** adalah sebuah bot Telegram yang memungkinkan pengguna melakukan transaksi top-up langsung di dalam Telegram dengan mengintegrasikan [API JF Store](https://topup.j-f.cloud/api/docs). Bot ini mempermudah transaksi pembelian produk seperti kredit game mobile, saldo prabayar, dan lainnya.
+**Bot Topup Otomatis** adalah sebuah bot Telegram yang memungkinkan pengguna melakukan transaksi top-up langsung di dalam Telegram dengan mengintegrasikan [API JF Store](https://topup.j-f.cloud/api/docs). Bot ini mempermudah transaksi pembelian produk seperti kredit game mobile, saldo prabayar, dan lainnya.
 
 ## Fitur
 
