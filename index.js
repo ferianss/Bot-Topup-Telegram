@@ -2324,7 +2324,7 @@ bot.onText(/\/listsmm(?: (.+))?/, async (msg, match) => {
 						inline_keyboard: [
 							[{
 								text: "⬅️ Back",
-								callback_data: 'btm'
+								callback_data: 'back'
 							}]
 						]
 					},
