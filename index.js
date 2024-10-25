@@ -24,7 +24,7 @@ const {
     ServerApiVersion
 } = require('mongodb');
 
-const channelId = '@notifyjf_store';
+const channelId = global.channelId;
 const bot = new TelegramBot(global.token, {
     polling: true
 });
@@ -32,7 +32,7 @@ const bot = new TelegramBot(global.token, {
 const imagePath = global.poster;
 
 const uri = global.mongodb;
-const dbs = 'botdb_tele'
+const dbs = global.database;
 const mClient = new MongoClient(uri, {
     serverApi: {
         version: ServerApiVersion.v1,
