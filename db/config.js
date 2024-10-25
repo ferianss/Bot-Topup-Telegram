@@ -1,4 +1,5 @@
 global.token = ['YOUR TOKEN BOT FROM BOTFATHER']
+global.channelId = '@notifyjf_store'; // Ganti dengan channel mu dan masukan bot kedalam channel
 
 global.creator = ['1234101835'] // USING USER ID
 global.owner = ['1234101835'] // USING USER ID
