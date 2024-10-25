@@ -12,6 +12,7 @@ global.poster= 'https://topup.j-f.cloud/assets/banner/banner.jpg'
 
 // Mongodb
 global.mongodb = "mongodb+srv://" // ganti dengan url database mongodb mu
+global.database = "botdb" // Sesuaikan dengan nama database mu
 
 // Paydisini Apikey
 global.paydisini_apikey = "APIKEY PAYDISINI";
