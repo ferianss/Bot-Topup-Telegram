@@ -1265,7 +1265,7 @@ bot.onText(/\/deposit(?: (.+))?/, async (msg, match) => {
 
     const url = 'https://paydisini.co.id/api/';
     const paydisiniApikey = global.paydisini_apikey;
-    const service = "23";
+    const service = "11";
     const valid_time = "1800";
     const note = "Deposit Saldo";
     const unique_code = generateUniqueRefID(6);
