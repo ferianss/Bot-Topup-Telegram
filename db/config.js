@@ -6,6 +6,8 @@ global.owner = ['1234101835'] // USING USER ID
 global.botName = 'JF Store'
 global.ownerName = 'JF Dev'
 
+global.user = 'xxx' // Daftar di https://j-f.cloud/api/wl
+
 global.gold = 196350
 global.platinum = 232050
 
