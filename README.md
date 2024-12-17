@@ -29,7 +29,7 @@ Sebelum menyiapkan bot, pastikan Anda memiliki:
 - Token bot Telegram (dapat diperoleh di [BotFather](https://t.me/@BotFather))
 - Akun [JF Store](https://topup.j-f.cloud/api/docs) dan APIKEY Anda
 - **Alamat IP Anda harus di-whitelist** agar bot dapat beroperasi. Pastikan IP Anda sudah ditambahkan ke daftar yang diizinkan untuk mencegah akses yang tidak sah.
-  [Klik di sini untuk menambahkan IP Anda](https://wa.me/6285773305337?text=Halo,+mau+add+ip)
+  [Klik di sini untuk menambahkan IP Anda](https://j-f.cloud/api/wl)
 
 ### TUTORIAL BIKIN DATABASE MONGODB DAN RUN BOT
 [Klik disini](https://www.youtube.com/watch?v=JtRUihD-TP4)
